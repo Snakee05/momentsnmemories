@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    background-color: #000000;
+    background-color: var(--color-black);
     color: var(--color-white);
     padding: 3rem 0;
 }
