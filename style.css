@@ -402,6 +402,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Footer */
+    .footer {
+  background: black;
+}
+
+
+#footer1{
+margin-left:2%;
+float:left;
+
+}
+#footer2{
+margin-right:2%;
+float:right;
+}
 .footer {
     background-color: var(--color-black);
     color: var(--color-white);
