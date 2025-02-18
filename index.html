@@ -3,88 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maison du Chocolat</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Moments&Memories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#collection">Collection</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Maison du Chocolat</h1>
-    </header>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">Moments&Memories</a>
+            <div class="nav-links">
+                <a href="/collection.html" class="nav-link">Collection</a>
+                <a href="/about.html" class="nav-link">About</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <h2>Artisanal Chocolate</h2>
-            <p>Experience the finest handcrafted chocolates, created with passion and precision.</p>
-            <a href="#collection" class="btn">Explore Collection</a>
-        </div>
-    </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content container">
+                <h1>Artisanal Chocolate Boxes</h1>
+                <p>Experience the finest handcrafted chocolates, created with passion and precision.</p>
+                <a href="/collection.html" class="btn btn-primary">Explore Collection</a>
+            </div>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features">
-        <div class="feature">
-            <img src="luxury-packaging.jpg" alt="Luxury Packaging">
-            <h3>Luxury Packaging</h3>
-            <p>Elegantly presented in our signature boxes.</p>
-        </div>
-        <div class="feature">
-            <img src="premium-quality.jpg" alt="Premium Quality">
-            <h3>Premium Quality</h3>
-            <p>Using the finest ingredients.</p>
-        </div>
-        <div class="feature">
-            <img src="global-shipping.jpg" alt="Global Shipping">
-            <h3>Global Shipping</h3>
-            <p>Delivered to your doorstep.</p>
-        </div>
-    </section>
+        <!-- Features -->
+        <section class="features">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6M12 12L7 7m5 5l5-5M7 7H4m16 0h-3M7 7V3m10 4V3"/>
+                        </svg>
+                        <h3>Luxury Packaging</h3>
+                        <p>Elegantly presented in our signature boxes</p>
+                    </div>
+                    <div class="feature">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                        <h3>Premium Quality</h3>
+                        <p>Using the finest ingredients</p>
+                    </div>
+                    <div class="feature">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                        <h3>Global Shipping</h3>
+                        <p>Delivered to your doorstep</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Collections Section -->
-    <section id="collections">
-        <h2>Signature Collections</h2>
-        <div class="collection">
-            <img src="classic-collection.jpg" alt="Classic Collection">
-            <h3>Classic Collection</h3>
-            <p>24 pieces</p>
-            <button class="btn">Request Price</button>
-        </div>
-        <div class="collection">
-            <img src="gold-collection.jpg" alt="Gold Collection">
-            <h3>Gold Collection</h3>
-            <p>36 pieces</p>
-            <button class="btn">Request Price</button>
-        </div>
-        <div class="collection">
-            <img src="luxury-collection.jpg" alt="Luxury Collection">
-            <h3>Luxury Collection</h3>
-            <p>48 pieces</p>
-            <button class="btn">Request Price</button>
-        </div>
-    </section>
+        <!-- Collections -->
+        <section class="collections">
+            <div class="container">
+                <h2>Signature Collections</h2>
+                <div class="collections-grid">
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="https://images.unsplash.com/photo-1526081347589-7fa3cb41b4b2?auto=format&fit=crop&q=80" alt="Classic Collection">
+                        </div>
+                        <div class="collection-info">
+                            <h3>Classic Collection</h3>
+                            <p>24 pieces</p>
+                            <button class="btn btn-outline">Request Price</button>
+                        </div>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&q=80" alt="Gold Collection">
+                        </div>
+                        <div class="collection-info">
+                            <h3>Gold Collection</h3>
+                            <p>36 pieces</p>
+                            <button class="btn btn-outline">Request Price</button>
+                        </div>
+                    </div>
+                    <div class="collection-card">
+                        <div class="collection-image">
+                            <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&q=80" alt="Luxury Collection">
+                        </div>
+                        <div class="collection-info">
+                            <h3>Luxury Collection</h3>
+                            <p>48 pieces</p>
+                            <button class="btn btn-outline">Request Price</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer Section -->
-    <footer id="contact">
-        <h2>Contact</h2>
-        <p>123 Chocolate Avenue<br>New York, NY 10001<br>*1 (555) 123-4567*</p>
-        <h3>Hours</h3>
-        <p>Monday - Friday: 9am - 8pm<br>Saturday: 10am - 6pm<br>Sunday: 11am - 5pm</p>
-        <div class="newsletter">
-            <h3>Newsletter</h3>
-            <p>Subscribe for exclusive offers and updates</p>
-            <form>
-                <input type="email" placeholder="Enter your email" required>
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Chocolate Avenue</p>
+                    <p>New York, NY 10001</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Friday: 9am - 8pm</p>
+                    <p>Saturday: 10am - 6pm</p>
+                    <p>Sunday: 11am - 5pm</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Maison du Chocolat. All rights reserved.</p>
+            </div>
         </div>
-        <p>© 2024 Maison du Chocolat. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
